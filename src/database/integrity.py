@@ -18,13 +18,15 @@ DATABASE_FOLDER = ROOT / 'database'
 DATABASE = ROOT / 'database' / 'database.db'
 
 # Functions
-def main():
+def integrity() -> bool:
     print(
         infoLog(
             message="Integrity Check Initialization",
             detail="Checking database directory..."
         )
     )
+
+    return True
 
 
 def create_database():
